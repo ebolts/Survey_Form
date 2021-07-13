@@ -4,14 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Survey-form</title>
 </head>
+<Style>
+    form{
+        background-color: lightgray;
+        position: relative;
+    }
+    Div{
+       
+    }
+</Style>
 <body>
     <h1 id="title">Survey Form</h1>
     <p id="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, molestias! Ad inventore a esse repellat,
          aliquam ipsum accusantium impedit quod voluptatem est aperiam tempora consequatur voluptates quos harum nemo soluta.
     </p>
     <form id=survey-form>
+        <Div>
         <label id="name-label" for="name">Enter Name:</label>
         <input type="text" name="name" id="name" placeholder="Name" required><br>
 
@@ -56,7 +66,7 @@
         <textarea name="Comment" id="Comment" cols="30" rows="10"></textarea>
         <br>
         <button type="submit" id="submit">Submit</button>
-        
+    </Div>
     </form>
 </body>
 </html>
