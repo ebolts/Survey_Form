@@ -7,21 +7,41 @@
     <title>Survey-form</title>
 </head>
 <Style>
+    #survey-form{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        ;
+    }
+    .Container{
+        background-color: darkgray;
+        padding: 10px;
+    }
+    label{
+        text-decoration: underline;
+    }
+    h1{
+        text-align: center;
+    }
     form{
         background-color: lightgray;
-        position: relative;
+        padding-bottom: 10px;
     }
-    Div{
-       
+    #description{
+        padding-bottom: 10px;
+        background-color: lightgray;
+        margin: 0px;
     }
+
 </Style>
 <body>
     <h1 id="title">Survey Form</h1>
     <p id="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, molestias! Ad inventore a esse repellat,
          aliquam ipsum accusantium impedit quod voluptatem est aperiam tempora consequatur voluptates quos harum nemo soluta.
     </p>
-    <form id=survey-form>
-        <Div>
+    <form id="survey-form">
+        <Div class="Container">
+            
         <label id="name-label" for="name">Enter Name:</label>
         <input type="text" name="name" id="name" placeholder="Name" required><br>
 
@@ -63,9 +83,10 @@
         <br><br>
         <label for="Comment">Enter a Comment:</label>
         <br>
-        <textarea name="Comment" id="Comment" cols="30" rows="10"></textarea>
+        <textarea name="Comment" id="Comment" cols="35" rows="10"></textarea>
         <br>
         <button type="submit" id="submit">Submit</button>
+        
     </Div>
     </form>
 </body>
